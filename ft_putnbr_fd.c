@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pramos <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: pramos <pramos@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 19:15:55 by pramos            #+#    #+#             */
-/*   Updated: 2023/01/25 19:15:56 by pramos           ###   ########.fr       */
+/*   Updated: 2023/02/08 18:48:22 by pramos           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar(char c, int fd)
+static void	ft_putchar(char c, int fd)
 {
 	write(fd, &c, 1);
 }
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
 	{

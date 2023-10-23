@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	a;
@@ -22,11 +22,12 @@ int ft_atoi(const char *str)
 	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
 		i++;
 	if (str[i] == 45)
-    {
+	{
 		signo = -1;
-        i++;
-    } else if (str[i] == 43)
-        i++;
+		i++;
+	}
+	else if (str[i] == 43)
+		i++;
 	while (str[i] > 47 && str[i] < 58)
 		a = a * 10 + (str[i++] - '0');
 	return (a * signo);
