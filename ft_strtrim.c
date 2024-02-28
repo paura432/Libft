@@ -41,10 +41,3 @@ char	*ft_strtrim(const char *s1, const char *set)
 	ft_strlcpy(aux, &s1[i], j - i + 2);
 	return (aux);
 }
-
-
-int main (void)
-{
-	printf("%s", ft_strtrim("holxad", "xa"));
-	return(0);
-}
