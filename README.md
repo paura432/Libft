@@ -62,4 +62,4 @@ To integrate **Libft** into your project:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your_username/libft.git
+git@github.com:paura432/libft.git
